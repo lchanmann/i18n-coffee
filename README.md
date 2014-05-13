@@ -9,7 +9,7 @@ Usage
 
 In your Gemfile add
 
-`gem 'i18n-coffee', '~> 0.1.0'`
+    gem 'i18n-coffee', '~> 0.1.1'
 
 
 Setup locale translations
@@ -19,20 +19,26 @@ By default, it looks for `javascripts` node in your {locale}.yml.
 
 **For example**
 
-<pre><code>
-# locales/en.yml
-en:
-  javascripts:
-    hello: "Hello"
-</code></pre>
+    # locales/en.yml
+    en:
+      javascripts:
+        hello: "Hello"
 
 
 On the client-side
 ------------------
 
-You can try in Firebug or Chrome developer tools with
+In your `application.js` file include i18n
 
-`window.t('javascripts.hello'); // "Hello"`
+```javascript
+//= require i18n
+```
+
+You can now try it in Firebug or Chrome developer tools with
+
+```javascript
+window.t('javascripts.hello'); // "Hello"
+```
 
 based on `I18n.locale` in Rails it will load the corresponding translations from your locale files.
 
