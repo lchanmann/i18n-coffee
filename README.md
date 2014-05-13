@@ -4,8 +4,8 @@ i18n-coffee
 Client Side Localisation for Rails
 
 
-Usages
-------
+Usage
+-----
 
 In your Gemfile add
 
