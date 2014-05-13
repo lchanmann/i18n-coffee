@@ -1,6 +1,10 @@
+# -*- encoding: utf-8 -*-
+$:.push File.expand_path("../lib", __FILE__)
+require "i18n/coffee/version"
+
 Gem::Specification.new do |s|
   s.name          = "i18n-coffee"
-  s.version       = "0.1.1"
+  s.version       = I18n::Coffee::Version.dup
   s.authors       = ["Chanmann Lim"]
   s.email         = "chanmannlim@gmail.com"
   s.homepage      = "https://rubygems.org/gems/i18n-coffee"
@@ -11,6 +15,7 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   s.add_dependency "rails"
-  s.add_dependency "coffee-rails"
   s.add_dependency "i18n"
+  s.add_dependency "coffee-rails"
+  s.add_dependency "jquery-rails"
 end
