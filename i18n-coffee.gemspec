@@ -3,6 +3,7 @@ Gem::Specification.new do |s|
   s.version       = "0.1.0"
   s.authors       = ["Chanmann Lim"]
   s.email         = "chanmannlim@gmail.com"
+  s.homepage      = "https://rubygems.org/gems/i18n-coffee"
   s.summary       = "Rails client-side i18n translation"
 
   s.files         = `git ls-files`.split("\n")
