@@ -7,13 +7,11 @@ Client Side Localisation for Rails
 
 In your Gemfile add
 
-    gem 'i18n-coffee', '~> 0.1.1'
+    gem 'i18n-coffee', '~> 0.1.2'
 
 ##Setup locale translations
 
 By default, it looks for `javascripts` node in your {locale}.yml.
-
-**For example**
 
     # config/locales/en.yml
     en:
@@ -28,13 +26,13 @@ In your `app/asssets/javascripts/application.js` file include i18n
 //= require i18n
 ```
 
-You can now try it in Firebug or Chrome developer tools with
+You can now try use `window.translate` or `window.t` for translation lookup.
 
 ```javascript
 window.t('javascripts.hello'); // "Hello"
 ```
 
-based on `I18n.locale` in Rails it will load the corresponding translations from your locale files.
+Based on `I18n.locale` in Rails, it will load the corresponding translations from your locale files.
 
 ###Passing variables to translation
 
@@ -49,8 +47,23 @@ window.t('javascripts.greeting', { name: "Mann" });
       javascripts:
         greeting: "Hello %{name}!"
         
+##Change javascript translations root
 
+You can choose a different root node as the translations.
 
+    # config/locales/en.yml
+    en:
+      views:
+        home:
+          title: "Hello world!"
 
+To select `views.home` as translation root:
 
+    # config/application.rb
+    config.i18n_translations_root = 'views.home'
 
+The translation root setting = `views.home` in `config/application.rb` will become `views_home` in client-side lookup key.  
+
+```javascript
+window.t('views_home.title'); // "Hello world!"
+```
