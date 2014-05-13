@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name          = "i18n-coffee"
-  s.version       = "0.0.1"
+  s.version       = "0.1.0"
   s.authors       = ["Chanmann Lim"]
   s.email         = "chanmannlim@gmail.com"
   s.summary       = "Rails client-side i18n translation"
