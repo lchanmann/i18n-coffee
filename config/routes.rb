@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
   # GET /translations
-  get '/translations' => 'translations#index'
+  match '/translations' => 'i18n/translations#index', via: :get
 end
