@@ -33,3 +33,9 @@ On the client-side
 You can try in Firebug or Chrome developer tools with
 
 `window.t('javascripts.hello'); // "Hello"`
+
+based on `I18n.locale` in Rails it will load the corresponding translations from your locale files.
+
+
+
+
