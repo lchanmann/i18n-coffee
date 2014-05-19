@@ -2,7 +2,7 @@
 
 Client Side Localisation for Rails
 
-[![Gem Version](https://badge.fury.io/rb/i18n-coffee@2x.png)](http://badge.fury.io/rb/i18n-coffee)
+[![Gem Version](https://badge.fury.io/rb/i18n-coffee.svg)](http://badge.fury.io/rb/i18n-coffee)
 
 ##Usage
 
