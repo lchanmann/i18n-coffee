@@ -2,12 +2,13 @@
 
 Client Side Localisation for Rails
 
+[![Gem Version](https://badge.fury.io/rb/i18n-coffee@2x.png)](http://badge.fury.io/rb/i18n-coffee)
 
 ##Usage
 
 In your Gemfile add
 
-    gem 'i18n-coffee', '~> 0.1.2'
+    gem 'i18n-coffee', '~> 0.1.3'
 
 ##Setup locale translations
 
