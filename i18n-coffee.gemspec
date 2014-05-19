@@ -5,7 +5,7 @@ require "i18n/coffee/version"
 Gem::Specification.new do |s|
   s.name          = "i18n-coffee"
   s.version       = I18n::Coffee::Version.dup
-  s.lincenses     = ["MIT"]
+  s.licenses      = ["MIT"]
   s.summary       = "Rails client-side i18n translation"
   s.description   = "A simple rails engine for client-side translation"
   s.authors       = ["Chanmann Lim"]
@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   s.files         = `git ls-files`.split("\n")
   s.require_paths = ["lib"]
 
-  s.platform      = Gem::Platform::Ruby
+  s.platform      = Gem::Platform::RUBY
 
   s.add_dependency "rails", ">= 3.2"
 end
